@@ -1,0 +1,143 @@
+.display_one .swiper {
+    height: 70vh;
+}
+
+.display_one .brand_name_mission {
+    bottom: 32%;
+}
+
+.display_one .brand_name_mission h2 {
+    color: #F9E0BB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== About Us Section ========= */
+
+
+
+/* about us */
+
+.about_us_section h3 {
+    color: #884A39;
+    font-weight: 600;
+}
+
+.about_us_section p {
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+
+/* card */
+
+.about_us_section .card {
+    animation-name: rotate;
+    background-color: #F9E0BB;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: default;
+    width: 356px;
+    height: 392px;
+    overflow: hidden;
+    position: relative;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: sticky;
+    top: 70px;
+}
+
+.about_us_section .card .brand_name {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(29, 29, 29);
+    text-shadow: 3px 3px 2px #FFC26F;
+}
+
+.about_us_section .card .brand_name img {
+    width: 150px;
+    height: 90px;
+    margin-bottom: 18px;
+}
+
+.about_us_section .card .brand_name h2 {
+    font-size: 52px;
+    font-weight: 600;
+    color: #884A39;
+    margin: 0;
+}
+
+.about_us_section .card .brand_name span {
+    font-size: 52px;
+    font-weight: 600;
+    color: #C38154;
+}
+
+.about_us_section .card .brand_name h5 {
+    text-align: center;
+    color: #884A39;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Courgette', cursive;
+    cursor: default;
+    text-transform: none;
+    text-shadow: none;
+    line-height: 1.8;
+}
+
+.about_us_section .card .social_media i {
+    margin-top: 12px;
+    font-size: 23px;
+    padding-right: 14px;
+    color: #884A39;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.about_us_section .card .social_media i:hover {
+    color: white;
+}
+
+@keyframes rotate {
+
+    from,
+    to {
+        animation-timing-function: ease-in;
+        box-shadow:
+            0 0 0 hsl(0, 0%, 80%),
+            0.1rem 0 0 hsl(0, 0%, 100%),
+            -0.2rem 0 0.75rem 0 hsla(0, 0%, 0%, 0.3);
+        transform: rotateY(-15deg);
+    }
+
+    25%,
+    75% {
+        animation-timing-function: ease-out;
+        box-shadow:
+            0 0 0 hsl(0, 0%, 80%),
+            0 0 0 hsl(0, 0%, 100%),
+            -0.25rem -0.05rem 1rem 0.15rem hsla(0, 0%, 0%, 0.3);
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        animation-timing-function: ease-in;
+        box-shadow:
+            -0.1rem 0 0 hsl(0, 0%, 80%),
+            0 0 0 hsl(0, 0%, 100%),
+            -0.3rem -0.1rem 1.5rem 0.3rem hsla(0, 0%, 0%, 0.3);
+        transform: rotateY(15deg);
+    }
+}

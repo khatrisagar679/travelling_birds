@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn link for css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Travelling Birds</title>
+
+    <!-- poppins font family from 200-800, courgette 400 regular and marck script  400 regular -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Marck+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- slick slider -->
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css">
+
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+
+    <!-- ======== fixed icon and form ==== -->
+
+    <!-- form -->
+
+    <div class="popup_form">
+        <form action="/submit" method="post">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="email">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="message">
+                <label for="address">Message:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- fixed icon -->
+
+    <div class="fixed_icon">
+        <div class="scroll_up">
+            <i class="fa-solid fa-hand-pointer"></i>
+        </div>
+        <div class="direct_message">
+            <button>
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <span>message</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ================= header =================== -->
+    <nav>
+        <section class="first_nav">
+            <div class="master_container">
+                <div class="marquee">
+                    <marquee class="marq" direction="up" scrollamount="1">
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Travelling Birds - It looks good on you!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Fly beyond boundaries - Travelling Birds at your service!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Dream, Explore, Wonder - Choose Travelling Birds!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Travell smart, Travell happy, Travelling Birds promised!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Creators of memories - Trust Travelling Birds!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Wings of discovery - Let Travelling Birds leads the way!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Your passage to discovery - Travelling Birds awaits!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Let your spirit soar - Travelling Birds Beckons!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                    </marquee>
+                </div>
+                <div class="social_media">
+                    <ul>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    </nav>
+
+
+    <!-- ============== display one =========== -->
+
+    <div class="display_one s_m_b">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/carousel/1.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/2.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/3.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/4.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/5.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/6.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/7.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/8.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/9.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/10.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/11.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/12.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/13.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/14.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/15.png" alt="images">
+                </div>
+            </div>
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="second_nav">
+            <section class="master_container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <div class="nav_link">
+                    <ul class="navbar">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Destination
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="menu_layer_one">
+                                <li>
+                                    <a href="package.html">
+                                        Mansalu Region
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Everest Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="package.html">
+                                                Everest Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Lukla
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Namche
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Gorakshep
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Kala Pattha
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Annapurna Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="package.html">
+                                                Annapurna Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Mardi Himal Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Ghorepani PoonHill
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Kanchenjunga Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="package.html">
+                                                Kanchenjunga Circuit Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Olangchung Gola Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Yalung Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Yamphudin
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Taplejung
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="package.html">
+                                        Gosaikunda
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="package.html">
+                                        Village Trek
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                Activities
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="menu_layer_one">
+                                <li>
+                                    <a href="">
+                                        City Tours
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="package.html">
+                                                Kathmandu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Lalitpur
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Bhaktapur
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        WildLife Jungle Safari
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="package.html">
+                                                Bardia Jungle Safari
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Chitwan Jungle Safari
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Bungee Jump
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="package.html">
+                                                Pokhara
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Tatopani
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Kushma
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        River Rafting
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="package.html">
+                                                Arun River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Marshyangdi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Karnali River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Sun Koshi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Kali Gandaki River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Bhote Koshi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Trishuli River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="package.html">
+                                                Seti River Rafting
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="package.html">
+                                        Mountain Bike Tour
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="package.html">
+                                        Paragliding
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="package.html">
+                                        Cycling
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="brand_name_mission">
+            <h2>Travelling <span>Birds</span> </h2>
+            <p>Leading the way in innovative and sustainable travel solution.</p>
+            <div class="sliderbird">
+                <i class="fa-solid fa-dove fa-beat-fade"></i>
+            </div>
+        </div>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton">Search</button>
+        </div>
+
+    </div>
+
+
+    <!-- ============ display two ==========  -->
+
+    <div class="display_two s_m">
+        <div class="master_container">
+            <div class="title mb">
+                <h2>TRENDING TRIPS</h2>
+                <h2>TRENDING TRIPS</h2>
+                <h5>My Travelling Birds, Your Travelling Birds, Travelling Birds for all!</h5>
+                <div class="bird">
+                    <i class="fa-solid fa-dove fa-beat-fade"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/trending/everest.png" class="card__image" alt="" />
+                            <div class="price">
+                                <h5>Rs. 85500/-</h5>
+                            </div>
+                            <div class="card__overlay">
+                                <div class="card__header">
+                                    <svg class="card__arc">
+                                        <path />
+                                    </svg>
+                                    <img src="images/trending/everest.png" alt="" />
+                                    <h3 class="card__title">Everest</h3>
+                                </div>
+                                <p class="card__description">The Everest Base Camp hike graduates from the alpine
+                                    surroundings at the south end of the Sagarmatha National Park to the scree-covered
+                                    ridges of ancient moraines in the final push towards the trekking finish line.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/trending/annapurna.png" class="card__image" alt="" />
+                            <div class="price">
+                                <h5>Rs. 15500/-</h5>
+                            </div>
+                            <div class="card__overlay">
+                                <div class="card__header">
+                                    <svg class="card__arc">
+                                        <path />
+                                    </svg>
+                                    <img src="images/trending/annapurna.png" />
+                                    <h3 class=" card__title">Annapurna</h3>
+                                </div>
+                                <p class="card__description">Hiking Nepal's Annapurna Circuit is one of the most
+                                    stunningly
+                                    beautiful, life-changing experiences you can have on your travels, and we're pretty
+                                    sure
+                                    that, like us, you'll be absolutely captivated by the area from the very first day.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/trending/ghorepani poon hill.png" class="card__image" alt="" />
+                            <div class="price">
+                                <h5>Rs. 56500/-</h5>
+                            </div>
+                            <div class="card__overlay">
+                                <div class="card__header">
+                                    <svg class="card__arc">
+                                        <path />
+                                    </svg>
+                                    <img src="images/trending/ghorepani poon hill.png" alt="" />
+                                    <h3 class="card__title">Ghorepani Poon Hill</h3>
+                                </div>
+                                <p class="card__description">The Ghorepani Poon Hill trek is perhaps the ultimate short
+                                    trek
+                                    in the Himalayas! Suitable for people of all ages, particularly for families with
+                                    children, this trek can be 4 or 5 days long and still gets into the heart of the
+                                    Annapurna.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="">
+                            <img src="images/trending/langtang gosaikunda trek.png" class="card__image" alt="" />
+                            <div class="price">
+                                <h5>Rs. 33500/-</h5>
+                            </div>
+                            <div class="card__overlay">
+                                <div class="card__header">
+                                    <svg class="card__arc">
+                                        <path />
+                                    </svg>
+                                    <img src="images/trending/langtang gosaikunda trek.png" alt="" />
+                                    <h3 class="card__title">Langtang Gosaikunda Trek</h3>
+                                </div>
+                                <p class="card__description">Langtang Gosaikunda Trek is a beautiful adventure trekking
+                                    in
+                                    the Langtang Region of the Himalaya. Langtang was the worst hit trekking region by
+                                    the
+                                    devastating earthquake in 2015 that badly destroyed infrastructures and precious
+                                    lives
+                                    there leaving the remaining into miserable and vulnerable condition. </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =========== display three ==================== -->
+
+    <div class="display_three s_m">
+        <div class="master_container">
+            <div class="title mb">
+                <h2>FIXED DEPARTURE</h2>
+                <h2>FIXED DEPARTURE</h2>
+                <h5>My Travelling Birds, Your Travelling Birds, Travelling Birds for all!</h5>
+                <div class="bird">
+                    <i class="fa-solid fa-dove fa-beat-fade"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="MultiCarousel" data-items="1,3,4,5" data-slide="1" id="MultiCarousel" data-interval="1000">
+                    <div class="MultiCarousel-inner">
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> MANASLU B.C. </h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>9 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p>
+                                        <strike>Rs. 2600/-</strike>
+                                        <span>- 20%</span>
+                                    </p>
+                                    <p class="final_price">
+                                        Rs. 2080/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> NARPHU VALLEY</h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>2 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p class="final_price">
+                                        Rs. 1855/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p>THARPU CHULI </h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>8 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p class="final_price">
+                                        Rs. 2000/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> AMADABLAM </h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>12 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p>
+                                        <strike>Rs. 4800/-</strike>
+                                        <span>- 12%</span>
+                                    </p>
+                                    <p class="final_price">
+                                        Rs. 4224/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> EVEREST B.C.</h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>4 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p>
+                                        <strike>Rs. 6800/-</strike>
+                                        <span>- 8%</span>
+                                    </p>
+                                    <p class="final_price">
+                                        Rs. 6256/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> TAMANAG HERITAGE</h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>6 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p class="final_price">
+                                        Rs. 1800/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> CHITWAN</h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>1 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p class="final_price">
+                                        Rs. 2400/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> ANNAPURNA B.C.</h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>7 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p>
+                                        <strike>Rs. 5000/-</strike>
+                                        <span>- 32%</span>
+                                    </p>
+                                    <p class="final_price">
+                                        Rs. 3400/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> GOKYO VALLEYT</h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>3 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p>
+                                        <strike>Rs. 3250/-</strike>
+                                        <span>- 12%</span>
+                                    </p>
+                                    <p class="final_price">
+                                        Rs. 2860/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> POKHARA</h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>4 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p class="final_price">
+                                        Rs. 1500/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <h5>KATHMANDU <p>to</p> GOSAIKUNDA</h5>
+                                <div class="price_and_date">
+                                    <div class="seats">
+                                        <i class="fa-solid fa-users"></i>
+                                        <p>4 seats available</p>
+                                    </div>
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                    </div>
+                                    <p>
+                                        <strike>Rs. 2600/-</strike>
+                                        <span>- 20%</span>
+                                    </p>
+                                    <p class="final_price">
+                                        Rs. 2080/-
+                                    </p>
+                                    <div class="booking">
+                                        <h6>Book Now</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary leftLst">></button>
+                    <button class="btn btn-primary rightLst">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =========== display four ==================== -->
+
+    <div class="display_four s_m">
+        <div class="title mb">
+            <h2>GALLERY</h2>
+            <h2>GALLERY</h2>
+            <h5>My Travelling Birds, Your Travelling Birds, Travelling Birds for all!</h5>
+            <div class="bird">
+                <i class="fa-solid fa-dove fa-beat-fade"></i>
+            </div>
+        </div>
+        <div class="photo_gallery">
+            <div class="photo_gallery_carousel">
+                <i
+                    class="fa-solid fa-angles-left photo_gallery_carousel__arrow photo_gallery_carousel__arrow--left"></i>
+                <i
+                    class="fa-solid fa-angles-right photo_gallery_carousel__arrow photo_gallery_carousel__arrow--right"></i>
+                <ul class="photo_gallery_carousel__slides">
+                    <li><img src="images/gallery/1.png" /></li>
+                    <li><img src="images/gallery/2.png" /></li>
+                    <li><img src="images/gallery/3.png" /></li>
+                    <li><img src="images/gallery/4.png" /></li>
+                    <li><img src="images/gallery/5.png" /></li>
+                    <li><img src="images/gallery/6.png" /></li>
+                    <li><img src="images/gallery/7.png" /></li>
+                    <li><img src="images/gallery/8.png" /></li>
+                    <li><img src="images/gallery/9.png" /></li>
+                    <li><img src="images/gallery/10.png" /></li>
+                    <li><img src="images/gallery/11.png" /></li>
+                    <li><img src="images/gallery/12.png" /></li>
+                    <li><img src="images/gallery/13.png" /></li>
+                    <li><img src="images/gallery/14.png" /></li>
+                    <li><img src="images/gallery/15.png" /></li>
+                    <li><img src="images/gallery/16.png" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======== display five =========== -->
+
+    <div class="display_five s_m">
+        <div class="title mb">
+            <h2>OUR PACKAGES</h2>
+            <h2>OUR PACKAGES</h2>
+            <h5>My Travelling Birds, Your Travelling Birds, Travelling Birds for all!</h5>
+            <div class="bird">
+                <i class="fa-solid fa-dove fa-beat-fade"></i>
+            </div>
+        </div>
+        <div class="master_container">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <div class="package">
+                        <img src="images/gallery/1.png" alt="">
+                        <div class="package_details">
+                            <div class="overlay">
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                            <h2>pokhara</h2>
+                            <div class="price">
+                                <P>Price From : <span>Rs. 1500/-</span></P>
+                            </div>
+                            <div class="difficulty">
+                                <p>Difficulty Level : <span>Easy</span></p>
+                            </div>
+                            <div class="seats">
+                                <i class="fa-solid fa-users"></i>
+                                <p>9 seats available</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-calendar-days">
+                                    <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                </i>
+                            </div>
+                            <div class="booking">
+                                <h6>Book Now</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="package">
+                        <img src="images/gallery/2.png" alt="">
+                        <div class="package_details">
+                            <div class="overlay">
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                            <h2>lumbini</h2>
+                            <div class="price">
+                                <P>Price From : <span>Rs. 1500/-</span></P>
+                            </div>
+                            <div class="difficulty">
+                                <p>Difficulty Level : <span>Moderate</span></p>
+                            </div>
+                            <div class="seats">
+                                <i class="fa-solid fa-users"></i>
+                                <p>9 seats available</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-calendar-days">
+                                    <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                </i>
+                            </div>
+                            <div class="booking">
+                                <h6>Book Now</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="package">
+                        <img src="images/gallery/3.png" alt="">
+                        <div class="package_details">
+                            <div class="overlay">
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </p>
+                            </div>
+                            <h2>EVEREST</h2>
+                            <div class="price">
+                                <P>Price From : <span>Rs. 1500/-</span></P>
+                            </div>
+                            <div class="difficulty">
+                                <p>Difficulty Level : <span>Challenging</span></p>
+                            </div>
+                            <div class="seats">
+                                <i class="fa-solid fa-users"></i>
+                                <p>9 seats available</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-calendar-days">
+                                    <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                </i>
+                            </div>
+                            <div class="booking">
+                                <h6>Book Now</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="package">
+                        <img src="images/gallery/4.png" alt="">
+                        <div class="package_details">
+                            <div class="overlay">
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                            <h2>Annapurna</h2>
+                            <div class="price">
+                                <P>Price From : <span>Rs. 1500/-</span></P>
+                            </div>
+                            <div class="difficulty">
+                                <p>Difficulty Level : <span>Moderate</span></p>
+                            </div>
+                            <div class="seats">
+                                <i class="fa-solid fa-users"></i>
+                                <p>9 seats available</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-calendar-days">
+                                    <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                </i>
+                            </div>
+                            <div class="booking">
+                                <h6>Book Now</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="package">
+                        <img src="images/gallery/5.png" alt="">
+                        <div class="package_details">
+                            <div class="overlay">
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </p>
+                            </div>
+                            <h2>Annapurna</h2>
+                            <div class="price">
+                                <P>Price From : <span>Rs. 1500/-</span></P>
+                            </div>
+                            <div class="difficulty">
+                                <p>Difficulty Level : <span>Challenging</span></p>
+                            </div>
+                            <div class="seats">
+                                <i class="fa-solid fa-users"></i>
+                                <p>9 seats available</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-calendar-days">
+                                    <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                </i>
+                            </div>
+                            <div class="booking">
+                                <h6>Book Now</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="package">
+                        <img src="images/gallery/6.png" alt="">
+                        <div class="package_details">
+                            <div class="overlay">
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                            <h2>Dhaulagiri</h2>
+                            <div class="price">
+                                <P>Price From : <span>Rs. 1500/-</span></P>
+                            </div>
+                            <div class="difficulty">
+                                <p>Difficulty Level : <span>Challenging</span></p>
+                            </div>
+                            <div class="seats">
+                                <i class="fa-solid fa-users"></i>
+                                <p>9 seats available</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-calendar-days">
+                                    <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                </i>
+                            </div>
+                            <div class="booking">
+                                <h6>Book Now</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="package">
+                        <img src="images/gallery/7.png" alt="">
+                        <div class="package_details">
+                            <div class="overlay">
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </p>
+                            </div>
+                            <h2>Namche Bazar</h2>
+                            <div class="price">
+                                <P>Price From : <span>Rs. 1500/-</span></P>
+                            </div>
+                            <div class="difficulty">
+                                <p>Difficulty Level : <span>Moderate</span></p>
+                            </div>
+                            <div class="seats">
+                                <i class="fa-solid fa-users"></i>
+                                <p>9 seats available</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-calendar-days">
+                                    <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                </i>
+                            </div>
+                            <div class="booking">
+                                <h6>Book Now</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="package">
+                        <img src="images/gallery/8.png" alt="">
+                        <div class="package_details">
+                            <div class="overlay">
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                            <h2>Mansalu</h2>
+                            <div class="price">
+                                <P>Price From : <span>Rs. 1500/-</span></P>
+                            </div>
+                            <div class="difficulty">
+                                <p>Difficulty Level : <span>Moderate</span></p>
+                            </div>
+                            <div class="seats">
+                                <i class="fa-solid fa-users"></i>
+                                <p>9 seats available</p>
+                            </div>
+                            <div class="duration">
+                                <i class="fa-regular fa-calendar-days">
+                                    <p>Jul 30, 2023 - Aug 12, 2023</p>
+                                </i>
+                            </div>
+                            <div class="booking">
+                                <h6>Book Now</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- =================== display six ================ -->
+
+    <div class="display_six s_m">
+        <div class="title mb">
+            <h2>BLOG</h2>
+            <h2>BLOG</h2>
+            <h5>My Travelling Birds, Your Travelling Birds, Travelling Birds for all!</h5>
+            <div class="bird">
+                <i class="fa-solid fa-dove fa-beat-fade"></i>
+            </div>
+        </div>
+        <div class="master_container">
+            <div class="row">
+                <!--Big news-->
+                <div class="col-md-6 col-12">
+                    <a href="blog.html">
+                        <div class="card" id="big_card">
+                            <img src="images/blog/1.png">
+                            <div class="text">
+                                <h2>Top places to visit in Kathmandu
+                                </h2>
+                                <p class="blog-date">Jul 22, 2023</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-6" id="small_card">
+                            <a href="blog.html">
+                                <div class="card">
+                                    <img src="images/blog/2.png">
+                                    <div class="text">
+                                        <h4>Nepali Culture
+                                        </h4>
+                                        <p class="blog-date">Jun 14, 2023</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="blog.html">
+                                <div class="card">
+                                    <img src="images/blog/3.png">
+                                    <div class="text">
+                                        <h4>Places in Nepal
+                                        </h4>
+                                        <p class="blog-date">Apr 6, 2023</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="blog.html">
+                                <div class="card">
+                                    <img src="images/blog/4.png">
+                                    <div class="text">
+                                        <h4>7 Heritage Sites in Kathmandu
+                                        </h4>
+                                        <p class="blog-date">Nov 16, 2022</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="blog.html">
+                                <div class="card">
+                                    <img src="images/blog/5.png">
+                                    <div class="text">
+                                        <h4>Trekking in Nepal
+                                        </h4>
+                                        <p class="news-date">Oct 27, 2022</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========= display seven ========== -->
+
+    <div class="display_seven s_m">
+        <div class="master_container">
+            <div class="title mb">
+                <h2>REVIEW</h2>
+                <h2>REVIEW</h2>
+                <h5>My Travelling Birds, Your Travelling Birds, Travelling Birds for all!</h5>
+                <div class="bird">
+                    <i class="fa-solid fa-dove fa-beat-fade"></i>
+                </div>
+            </div>
+
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="images/review/1.jpg" />
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Harcod Stipple</p>
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <div class="paragraph-container">
+                                    <p class="paragraph-content">
+                                        Everything about this company is Great and I can’t recommend it enough. My guide
+                                        xiring lama was perfect company and very nice to have around. Khirlal and Sunita
+                                        were also great company and fantastic hosts, from taking me to buddha stupas and
+                                        out for tea. Amazing work!
+                                    </p>
+                                    <div class="read-more-container">
+                                        <a class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="images/review/2.jpg" />
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Brody Mitchell</p>
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <div class="paragraph-container">
+                                    <p class="paragraph-content">
+                                        The trek was epic in everyway possible. They looked after our every requirement
+                                        and were
+                                        proactive on weather too. I couldn't have asked for more. Thank you for being
+                                        there and
+                                        making us fell whole new experience!
+                                    </p>
+                                    <div class="read-more-container">
+                                        <a class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="images/review/3.jpg" />
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">ljod vaakar</p>
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <div class="paragraph-container">
+                                    <p class="paragraph-content">
+                                        Endless thanks, love for this company and the people who run it! I had an
+                                        amazing
+                                        experience trekking to Everest Base Camp with my brilliant female guide Lhami
+                                        Sherpa!
+                                        Sent one email and the next day I was sitting with everyone planning our trip!
+                                        Thanks Travelling Birds!
+                                    </p>
+                                    <div class="read-more-container">
+                                        <a class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="images/review/4.jpg" />
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Tomas Kapek</p>
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <div class="paragraph-container">
+                                    <p class="paragraph-content">
+                                        A unforgettable trip! Looking forward to come back in Nepal with these people
+                                        who
+                                        felt like family. The energy this company has is absolutely amazing! If you are
+                                        reading
+                                        this review look no further just send them a email! Experiencing the immaculate
+                                        Himalayan mountains, lovely Tea Houses, Nepali culture, is something you can’t
+                                        pass up!
+                                    </p>
+                                    <div class="read-more-container">
+                                        <a class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="images/review/5.jpg" />
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Kasper Zytkowicz</p>
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <div class="paragraph-container">
+                                    <p class="paragraph-content">
+                                        Had a 9-days long trip with Khirlal to Mardi Base Camp (via Poon Hill). The trip
+                                        itself
+                                        was very well organized and Khirlal was extremely engaged, providing all the
+                                        necessary
+                                        knowledge and operational support to make the trip as safe and enjoyable as
+                                        possible
+                                    </p>
+                                    <div class="read-more-container">
+                                        <a class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="images/review/6.jpg" />
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Emily Myers</p>
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <div class="paragraph-container">
+                                    <p class="paragraph-content">
+                                        My friend and I did a short 3-day trek and we had a great time! Our guide was
+                                        wonderful
+                                        to chat with us as we were hiking and he made sure that we got the best hotel
+                                        available
+                                        wherever we were staying. I would definitely book them again if I ever go back
+                                        to nepal.
+                                        Just make sure to bring your own toilet paper as the guesthouses may not provide
+                                        any.
+                                    </p>
+                                    <div class="read-more-container">
+                                        <a class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="images/review/7.jpg" />
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Kirlar gaapsy</p>
+                                <p class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <div class="paragraph-container">
+                                    <p class="paragraph-content">
+                                        Sunita and sagar were great guides… All was provided in plenty, accomodation was
+                                        great,
+                                        we even didnt need sleeping bags. Me and my son had great time in Nepal. We did
+                                        Poonhill
+                                        trek which was not very dificult but nice and enjoyable trek
+                                    </p>
+                                    <div class="read-more-container">
+                                        <a class="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- ============ display eight =================== -->
+
+    <!-- <div class="display_eight s_m">
+    <div class="master_container">
+        <div class="title mb">
+            <h2>PARTNERSHIP</h2>
+            <h2>PARTNERSHIP</h2>
+            <h5>My Travelling Birds, Your Travelling Birds, Travelling Birds for all!</h5>
+            <div class="bird">
+                <i class="fa-solid fa-dove fa-beat-fade"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="swiper partnershipSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/sponsorship/1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/sponsorship/2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/sponsorship/3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/sponsorship/4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/sponsorship/5.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="brand_name">
+                        <img src="images/logo.png" alt="">
+                        <h2>travelling</h2>
+                        <span>birds</span>
+                        <h5><em>Feel free to contact us for potential association discussions</em></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+    </div>
+    </div> -->
+
+
+
+    <!-- ============= footer ========== -->
+
+    <div class="footer">
+        <div class="main_footer">
+            <div class="row main_footer_content master_container">
+                <div class="col-md-3">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Why Us</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">Get in Touch</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Chat</a></li>
+                        <li><a href="">Review</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li class="address"><a href="">Kirtipur, Kathmandu Nepal</a></li>
+                        <li class="phone_number"><a href="">+977-97126754190</a><a href="">+977-9860005241</a></li>
+                        <li class="mail_address"><a href="">travellingbirds@gmail.com</a></li>
+                    </ul>
+                    <div class="social_media">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Our Facebook</h3>
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbirdstravelling&tabs&width=340&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+                        width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="col-12">
+                    <div class="accepting_card">
+                        <h3>We Accept :</h3>
+                        <div class="payment_cards">
+                            <img src="images/payment/american-express.avif" alt="">
+                            <img src="images/payment/dinners-club.avif" alt="">
+                            <img src="images/payment/discover.avif" alt="">
+                            <img src="images/payment/jcb.avif" alt="">
+                            <img src="images/payment/master-card.avif" alt="">
+                            <img src="images/payment/union-pay-logo.avif" alt="">
+                            <img src="images/payment/visa.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="recommended">
+                        <h4>Recommended On :</h4>
+                        <div class="recommended_img">
+                            <img src="images/recommended/lonely-planet.jpg" alt="">
+                            <!-- <img src="images/recommended/tibet-book.jpg" alt=""> -->
+                            <img src="images/recommended/TourRadar_Logo.png" alt="">
+                            <img src="images/recommended/tripadvisor.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay_footer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>We Accept :</h4>
+                        <div class="payment_cards">
+                            <img src="images/payment/american-express.avif" alt="">
+                            <img src="images/payment/dinners-club.avif" alt="">
+                            <img src="images/payment/discover.avif" alt="">
+                            <img src="images/payment/jcb.avif" alt="">
+                            <img src="images/payment/master-card.avif" alt="">
+                            <img src="images/payment/union-pay-logo.avif" alt="">
+                            <img src="images/payment/visa.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-5">
+                        <h4>Recommended On :</h4>
+                        <div class="recommended_img">
+                            <img src="images/recommended/lonely-planet.jpg" alt="">
+                            <!-- <img src="images/recommended/tibet-book.jpg" alt=""> -->
+                            <img src="images/recommended/TourRadar_Logo.png" alt="">
+                            <img src="images/recommended/tripadvisor.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last_footer master_container">
+            <p>©️ copyright 2023 <span>Travelling Birds</span></p>
+            <p>Powered by : <a href=""><span>Iceberg Technology</span></a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- jquery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- cdn link for js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- slick slider -->
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- link to js file -->
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>

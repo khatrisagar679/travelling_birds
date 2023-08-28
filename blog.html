@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn link for css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+
+    <title>Travelling Birds</title>
+
+    <!-- poppins font family from 200-800, courgette 400 regular and marck script  400 regular -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Marck+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- slick slider -->
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css">
+
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+
+    <!-- ======== fixed icon and form ==== -->
+
+    <!-- form -->
+
+    <div class="popup_form">
+        <form action="/submit" method="post">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="email">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="message">
+                <label for="address">Message:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- fixed icon -->
+
+    <div class="fixed_icon">
+        <div class="scroll_up">
+            <i class="fa-solid fa-hand-pointer"></i>
+        </div>
+        <div class="direct_message">
+            <button>
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <span>message</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ================= header =================== -->
+    <nav>
+        <section class="first_nav">
+            <div class="master_container">
+                <div class="marquee">
+                    <marquee class="marq" direction="up" scrollamount="1">
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Travelling Birds - It looks good on you!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Fly beyond boundaries - Travelling Birds at your service!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Dream, Explore, Wonder - Choose Travelling Birds!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Travell smart, Travell happy, Travelling Birds promised!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Creators of memories - Trust Travelling Birds!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Wings of discovery - Let Travelling Birds leads the way!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Your passage to discovery - Travelling Birds awaits!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Let your spirit soar - Travelling Birds Beckons!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                    </marquee>
+                </div>
+                <div class="social_media">
+                    <ul>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    </nav>
+
+
+    <!-- ============== display one =========== -->
+
+    <div class="display_one s_m_b">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/carousel/1.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/2.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/3.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/4.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/5.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/6.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/7.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/8.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/9.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/10.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/11.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/12.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/13.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/14.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/15.png" alt="images">
+                </div>
+            </div>
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="second_nav">
+            <section class="master_container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <div class="nav_link">
+                    <ul class="navbar">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Destination
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="menu_layer_one">
+                                <li>
+                                    <a href="">
+                                        Mansalu Region
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Everest Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Everest Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Lukla
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Namche
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Gorakshep
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Kala Pattha
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Annapurna Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Annapurna Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Mardi Himal Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Ghorepani PoonHill
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Kanchenjunga Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Kanchenjunga Circuit Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Olangchung Gola Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Yalung Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Yamphudin
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Taplejung
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Gosaikunda
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Village Trek
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                Activities
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="menu_layer_one">
+                                <li>
+                                    <a href="">
+                                        City Tours
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Kathmandu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Lalitpur
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Bhaktapur
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        WildLife Jungle Safari
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Bardia Jungle Safari
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Chitwan Jungle Safari
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Bungee Jump
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Pokhara
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Tatopani
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Kushma
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        River Rafting
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Arun River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Marshyangdi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Karnali River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Sun Koshi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Kali Gandaki River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Bhote Koshi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Trishuli River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Seti River Rafting
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Mountain Bike Tour
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Paragliding
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Cycling
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="brand_name_mission">
+            <h2>Blog</h2>
+        </div>
+    </div>
+
+
+    <!-- ========= Blog section ========== -->
+
+    <!-- section one -->
+
+    <div class="blog_section_one s_m_t">
+        <div class="section_one_container">
+            <a href="blog.html">
+                <img src="images/blog/1.png" alt="">
+                <h2>Top Places to visit in Kathmandu</h2>
+                <div class="description_and_date">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi optio commodi non in ab eius
+                        dolores tenetur incidunt, accusamus totam odio vel quae, voluptates magni quo, rem quidem
+                        adipisci
+                        aliquam.
+                        Rerum consequuntur, illo illum odio iste repellendus debitis vitae quisquam voluptates culpa
+                        assumenda atque aliquid a nam placeat id laudantium dolores sequi hic autem, aspernatur
+                        veritatis,
+                        porro sed? Exercitationem, inventore.
+                        Cumque hic vero quae aut libero, ut magni repellat voluptas voluptates, ea ipsa optio, maiores
+                        asperiores dolores ducimus repudiandae! Quod, necessitatibus. Minus suscipit dolor ab maxime non
+                        eveniet illo explicabo!</p>
+                    <p>Jul 22, 2023</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- section two -->
+
+    <div class="blog_section_two s_m_b">
+        <div class="master_container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="blog.html">
+                        <img src="images/blog/2.png" alt="">
+                        <h3>Nepali Culture</h3>
+                        <div class="description_and_date">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum odit vero dolorem cumque
+                                iste
+                                quam, aliquam asperiores cum eum quod placeat non repudiandae corporis nobis nemo nam
+                                nostrum
+                                tempore. Incidunt.</p>
+                            <p>Jun 14, 2023</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="blog.html">
+                        <img src="images/blog/3.png" alt="">
+                        <h3>Places in Nepal</h3>
+                        <div class="description_and_date">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum odit vero dolorem cumque
+                                iste
+                                quam, aliquam asperiores cum eum quod placeat non repudiandae corporis nobis nemo nam
+                                nostrum
+                                tempore. Incidunt.</p>
+                            <p>Apr 6, 2023</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="blog.html">
+                        <img src="images/blog/4.png" alt="">
+                        <h3>7 Heritage Sites in Kathmandu</h3>
+                        <div class="description_and_date">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum odit vero dolorem cumque
+                                iste
+                                quam, aliquam asperiores cum eum quod placeat non repudiandae corporis nobis nemo nam
+                                nostrum
+                                tempore. Incidunt.</p>
+                            <p>Nov 16, 2022</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="blog.html">
+                        <img src="images/blog/5.png" alt="">
+                        <h3>Trekking in Nepal</h3>
+                        <div class="description_and_date">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum odit vero dolorem cumque
+                                iste
+                                quam, aliquam asperiores cum eum quod placeat non repudiandae corporis nobis nemo nam
+                                nostrum
+                                tempore. Incidunt.</p>
+                            <p>Oct 27, 2022</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ============= footer ========== -->
+
+    <div class="footer">
+        <div class="main_footer">
+            <div class="row main_footer_content master_container">
+                <div class="col-md-3">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Why Us</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">Get in Touch</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Chat</a></li>
+                        <li><a href="">Review</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li class="address"><a href="">Kirtipur, Kathmandu Nepal</a></li>
+                        <li class="phone_number"><a href="">+977-97126754190</a><a href="">+977-9860005241</a></li>
+                        <li class="mail_address"><a href="">travellingbirds@gmail.com</a></li>
+                    </ul>
+                    <div class="social_media">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Our Facebook</h3>
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbirdstravelling&tabs&width=340&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+                        width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="col-12">
+                    <div class="accepting_card">
+                        <h3>We Accept :</h3>
+                        <div class="payment_cards">
+                            <img src="images/payment/american-express.avif" alt="">
+                            <img src="images/payment/dinners-club.avif" alt="">
+                            <img src="images/payment/discover.avif" alt="">
+                            <img src="images/payment/jcb.avif" alt="">
+                            <img src="images/payment/master-card.avif" alt="">
+                            <img src="images/payment/union-pay-logo.avif" alt="">
+                            <img src="images/payment/visa.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="recommended">
+                        <h4>Recommended On :</h4>
+                        <div class="recommended_img">
+                            <img src="images/recommended/lonely-planet.jpg" alt="">
+                            <!-- <img src="images/recommended/tibet-book.jpg" alt=""> -->
+                            <img src="images/recommended/TourRadar_Logo.png" alt="">
+                            <img src="images/recommended/tripadvisor.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay_footer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>We Accept :</h4>
+                        <div class="payment_cards">
+                            <img src="images/payment/american-express.avif" alt="">
+                            <img src="images/payment/dinners-club.avif" alt="">
+                            <img src="images/payment/discover.avif" alt="">
+                            <img src="images/payment/jcb.avif" alt="">
+                            <img src="images/payment/master-card.avif" alt="">
+                            <img src="images/payment/union-pay-logo.avif" alt="">
+                            <img src="images/payment/visa.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-5">
+                        <h4>Recommended On :</h4>
+                        <div class="recommended_img">
+                            <img src="images/recommended/lonely-planet.jpg" alt="">
+                            <!-- <img src="images/recommended/tibet-book.jpg" alt=""> -->
+                            <img src="images/recommended/TourRadar_Logo.png" alt="">
+                            <img src="images/recommended/tripadvisor.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last_footer master_container">
+            <p>©️ copyright 2023 <span>Travelling Birds</span></p>
+            <p>Powered by : <a href=""><span>Iceberg Technology</span></a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- jquery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- cdn link for js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- slick slider -->
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- link to js file -->
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>

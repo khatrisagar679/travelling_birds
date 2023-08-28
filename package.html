@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn link for css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="package.css">
+
+    <title>Travelling Birds</title>
+
+    <!-- poppins font family from 200-800, courgette 400 regular and marck script  400 regular -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Marck+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- slick slider -->
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css">
+
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+
+
+    <!-- ======== fixed icon and form ==== -->
+
+    <!-- form -->
+
+    <div class="popup_form">
+        <form action="/submit" method="post">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="email">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="message">
+                <label for="address">Message:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- fixed icon -->
+
+    <div class="fixed_icon">
+        <div class="scroll_up">
+            <i class="fa-solid fa-hand-pointer"></i>
+        </div>
+        <div class="direct_message">
+            <button>
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <span>message</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ================= header =================== -->
+    <nav>
+        <section class="first_nav">
+            <div class="master_container">
+                <div class="marquee">
+                    <marquee class="marq" direction="up" scrollamount="1">
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Travelling Birds - It looks good on you!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Fly beyond boundaries - Travelling Birds at your service!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Dream, Explore, Wonder - Choose Travelling Birds!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Travell smart, Travell happy, Travelling Birds promised!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Creators of memories - Trust Travelling Birds!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Wings of discovery - Let Travelling Birds leads the way!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Your passage to discovery - Travelling Birds awaits!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                            <p>"Let your spirit soar - Travelling Birds Beckons!"</p>
+                            <i class="fa-solid fa-dove fa-beat-fade"></i>
+                        </div>
+                    </marquee>
+                </div>
+                <div class="social_media">
+                    <ul>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    </nav>
+
+
+    <!-- ============== display one =========== -->
+
+    <div class="display_one s_m_b">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/carousel/1.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/2.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/3.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/4.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/5.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/6.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/7.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/8.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/9.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/10.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/11.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/12.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/13.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/14.png" alt="images">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/15.png" alt="images">
+                </div>
+            </div>
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="second_nav">
+            <section class="master_container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <div class="nav_link">
+                    <ul class="navbar">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Destination
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="menu_layer_one">
+                                <li>
+                                    <a href="">
+                                        Mansalu Region
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Everest Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Everest Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Lukla
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Namche
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Gorakshep
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Kala Pattha
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Annapurna Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Annapurna Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Mardi Himal Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Ghorepani PoonHill
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Kanchenjunga Region
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Kanchenjunga Circuit Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Olangchung Gola Trek
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Yalung Base Camp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Yamphudin
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Taplejung
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Gosaikunda
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Village Trek
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                Activities
+                            </a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="menu_layer_one">
+                                <li>
+                                    <a href="">
+                                        City Tours
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Kathmandu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Lalitpur
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Bhaktapur
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        WildLife Jungle Safari
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Bardia Jungle Safari
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Chitwan Jungle Safari
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Bungee Jump
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Pokhara
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Tatopani
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Kushma
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        River Rafting
+                                    </a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="menu_layer_two">
+                                        <li>
+                                            <a href="">
+                                                Arun River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Marshyangdi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Karnali River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Sun Koshi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Kali Gandaki River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Bhote Koshi River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Trishuli River Rafting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Seti River Rafting
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Mountain Bike Tour
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Paragliding
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Cycling
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="brand_name_mission">
+            <h2>Package</h2>
+        </div>
+    </div>
+
+
+    <!-- ========= package section ========== -->
+
+    <div class="package_section s_m">
+        <div class="master_container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="overview">
+                        <h2>OverView</h2>
+                        <p>The Annapurna Circuit is a trek within the mountain ranges of central Nepal. The total length
+                            of the route varies between 160–230 km (100-145 mi), depending on where motor transportation
+                            is used and where the trek is ended. This trek crosses two different river valleys and
+                            encircles the Annapurna Massif. The path reaches its highest point at Thorung La pass
+                            (5416m/17769 ft), reaching the edge of the Tibetan plateau.</p>
+                        <p>The Annapurna Base Camp (ABC) Trek is a dream trip for trekkers around the world. It is one
+                            of the most famous trekking destinations in the Himalayas. The ABC trek is the journey to
+                            Annapurna Sanctuary, exploring the villages, mountains, local cultures, and local foods.</p>
+                        <p>
+                            The highlight of the trek is reaching Annapurna Base Camp, situated at an altitude of 4,130
+                            meters (13,549 feet). As you stand in awe of the majestic Annapurna massif, including the
+                            iconic peaks of Annapurna I (8,091 meters) and Machapuchare (6,993 meters), you'll realize
+                            the true grandeur of nature and the indomitable spirit of the mountains.
+                        </p>
+                    </div>
+                    <div class="itinerary">
+                        <h2>Itinerary</h2>
+                        <div class="itinerary_section">
+                            <div class="row gy-4">
+
+                                <div class="col-md-2">
+                                    Day 01
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Drive to Besisahar (923m) and trekking to Bulbule.</p>
+                                    <p class="paragraph">From Kathmandu, we start early for our drive to Besisahar. We
+                                        travel by bus arranged by us. The road up to Besisahar is of fair quality. Once
+                                        we have reached Besisahar we walk about another two hours to Bulebule close to
+                                        Marysangdi river. It’s an easy trek to Bulbule after the long bus journey. Once
+                                        we reach there, we freshen up and spend the night there.</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 02
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Chamje (1410m)</p>
+                                    <p class="paragraph">On the first day of the trek, we cross various suspension
+                                        bridges, waterfalls and continue past rice paddies and forests. Once we reach
+                                        the cliff in Jagat, we can view the Marsyangdi Khola below and rocky hills all
+                                        around. The beehives at the top of the cliffs are an attraction for today. In a
+                                        short while we will reach Chamje where we spend the night.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 03
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Bagarchhap (2160m)
+                                    </p>
+                                    <p class="paragraph">As we move past narrow and steep valleys, through rhododendron,
+                                        pine and bamboo forests, in the rocky folds of a mountain, we come across a
+                                        bridge that takes us to a quick ascent and finally atop a climb to reveal a
+                                        widening valley. After reaching the village of Tal, we have to move across
+                                        barley, wheat and potato farms for a while before we reach Dharapani. From there
+                                        we turn west through the fir and pine forests to reach Bagarchhap.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 04
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Chame (2710m)
+                                    </p>
+                                    <p class="paragraph">From Bagarchhap we start ahead to reach a Danaque village and
+                                        then a steep climb to reach a Tamang village with exquisite views of Manaslu,
+                                        Lamjung , Annapurna and other mountain beauties. As we trek through a Tibetan
+                                        village that acts as a transition between the lowlands and high hills, we follow
+                                        a gradual flat path to Thanchowk, Kolo and finally to Chame.</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 05
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Pisang (3240m)</p>
+                                    <p class="paragraph">We first pass through the older part of Chame, climb up to
+                                        Telekhu and continue on a long, leveled trail through forests underway to
+                                        Brathang. The trails rounds a bend and once we continue ahead we need to cross
+                                        back to the south bank of Marsyangdi River on a suspension bridge. Then the
+                                        trail takes us on a gentle ascent over a pine forested ridge and then levels
+                                        again as we move from the upper part of Manang valley to Pisang.</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 06
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Manang (3540m)</p>
+                                    <p class="paragraph">The town of Pisang is the start of the upper region of the
+                                        Manang district. On this day, the trek climbs to Braga, a Tibetan styled
+                                        village. The houses here are stacked upon each other forming verandas with each
+                                        others rooftops. The main attraction is the Gompa, the largest in the district,
+                                        with a vast array of statues in display and perched on a high crag with the view
+                                        of the entire village. After a while we reach Manang, where we freshen up and
+                                        spend the night.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 07
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Acclimatisation in Manang</p>
+                                    <p class="paragraph">As we are reaching higher altitudes, we need to acclimatize to
+                                        avoid the risk of altitude sickness. Manang is the perfect spot with its
+                                        beautiful natural setting and a hike up to Khangsar in the afternoon for a short
+                                        detour.</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 08
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Yak Kharka (4120m)</p>
+                                    <p class="paragraph">Now that we are rested, we feel rejuvenated to continue on our
+                                        trek. As we move past the tall trees towards the alpine grass and junipers, we
+                                        reach meadows where a few horses and a number of yaks are grazing around. The
+                                        serene environment with meadows and steep slopes of Yak Kharka is the perfect
+                                        place for us to spend the night. We can also choose to walk for an hour to reach
+                                        Letdar and spend the night there</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 09
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Thorung Phedi (4.560m)</p>
+                                    <p class="paragraph">Trekking to Letdar helps getting acclimatized to the increasing
+                                        altitude as we ascend along the east bank of Jarang Khola. In some time we reach
+                                        a meadow surrounded by vertical cliffs, the Thorung Phedi. Sighting of blue
+                                        sheep and snow leopards have been reported a few times in the area, whereas
+                                        Lammergeyers and griffons are quite common. We spend the night here.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 10
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Over Thorung La (5.416m) to Muktinath (3.802m) – 8 hours</p>
+                                    <p class="paragraph">Today we will hike for about 7-8 hours. The trail is
+                                        comparatively easier having been trodden for years, but could get difficult with
+                                        strong winds in the upper regions. The trail is believed to have been used for
+                                        hundreds of years to take sheep and yaks in and out of Manang along with other
+                                        trading goods. We reach Thorung Phedi in about 6 hours. After we reach Thorung
+                                        la pass, our hike will be rewarded with beautiful views of Annapurna, Gangapurna
+                                        and a heavily glaciated peak of Khatungkang. When are a done with a descent of
+                                        about 1600m, we view the glorious Dhaulagiri standing in the distance. After a
+                                        while, the trail becomes less steep and enters grassy fields and meadows to
+                                        finally reach Muktinath. In Hindu religion, Muktinath refers to a place of
+                                        nirvana which houses a temple and a number of monasteries, making it a holy site
+                                        for Hindus and Buddhists alike. The main attractions of the site are the
+                                        Jwalamai temple with a spring and an eternal flame as well as the 108 water
+                                        spouts that pour holy water. These are visited by thousands of pilgrims every
+                                        year.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 11
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Jomsom (2750m) via Kagbeni.</p>
+                                    <p class="paragraph">From Muktinath, we follow a trail part of the Jomsom trek where
+                                        we descend through meadows, streams and fruit trees to finally reach Kagbeni. We
+                                        look around the old village and then moving downwards. From Kagbeni we reach
+                                        Jomson, Kali Gandaki valley.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 12
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Drive to Tatopani (1190) – Hot Water Springs</p>
+                                    <p class="paragraph">The road from Marpha to Kalopani goes via a new trail past
+                                        Chokhopani village which is a traditional Thakali village. The panoramic views
+                                        of the Himalayas include Nilgiri, Dhaulagiri, Tukuche, Annapurna and many other
+                                        snow-capped peaks. From here we cross a river and a newly constructed road that
+                                        will make us finally reach Kalopani.</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 13
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Trek to Ghorepani (2750m)</p>
+                                    <p class="paragraph">Today we move from Tatopani through villages of midland Nepal
+                                        with terraced fields and inclined farmlands. As we hike and ascend we move past
+                                        rhododendron, magnolia and other vegetation of the area. We finally reach
+                                        Ghorepani as we witness the beautiful mountains in the evening sky. We rest in
+                                        Ghorepani to make an early start pushing for Poonhill in the morning.</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 14
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Ghorepani – Poonhill – Nayapul. Drive to Pokhara – 7 hours</p>
+                                    <p class="paragraph">We have an early morning ascent of Poonhill for the sunrise.
+                                        This has to be the highlight of the trek as we make our trip to the vantage
+                                        point early in the morning with sunrise. Once you see the snow-capped peaks
+                                        highlighted in the changing golden rays of the sunrise, it will be one of the
+                                        most unforgettable moments of your life. The peaks in the scenery include the
+                                        Annapurna range and Dhaulagiri. Known as a photographer’s paradise, we can spend
+                                        some time here taking breathtaking pictures of the spellbinding surroundings,
+                                        capturing the spectacular moments in a frame. We then descend to Ghorepani for
+                                        breakfast and then trek for 5 hours down to Nayapul. The first part of the trek
+                                        down until Tikhedhunga is quite steep down hill. From there we move past
+                                        terraced fields for a few hours to reach Nayapul. From there a short drive will
+                                        finally take us to Pokhara.</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    Day 15
+                                </div>
+                                <div class="col-md-10">
+                                    <p class="word">Return drive to Kathmandu and transfer to hotel – 7 hours</p>
+                                    <p class="paragraph">After enjoying beautiful Pokhara and its natural and cultural
+                                        beauty, we begin our drive towards Kathmandu. After about 6-7 hours, we finally
+                                        reach Kathmandu. We can either rest or go discover the tourist attractions in
+                                        the capital city.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="included">
+                        <h2>What's Included?</h2>
+                        <div class="row gy-3">
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                Airport pickup and drop by private vehicle.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                Three night’s twin sharing 3 star Hotel in Kathmandu with breakfast.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                A professional tour guide during tour.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                Private vehicles during city tour.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                Eco Holidays Nepal T-shirt and cap.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                Tea house accommodation during tour.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                All entry fee.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                Necessary ground transports.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check-double" style="color: #63df53;"></i>
+                                Farewell dinner with culture show.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="excluded">
+                        <h2>What's Excluded?</h2>
+                        <div class="row gy-3">
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                Meals whilst you are in during tour (Lunch and dinner).
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                Nepal entry visa fee (you may easily issue the visa on arrival at Tribhuvan
+                                International
+                                Airport – Kathmandu). $25 USD for 15 days Visa.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                Your Travel and Medical Insurance.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                International Airfare.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                Your Personal Expenses.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                All the alcoholic and nonalcoholic cold and hot drinks on tour (those you choose to
+                                purchase
+                                along the way and during tour).
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                All desserts sweet things like chocolate, cake, pie, pudding.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                Extra activities which are not include on package.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-xmark" style="color: #d90d0d;"></i>
+                                Tips for the guide and driver (Tipping is expected)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <form action="/submit" method="post">
+                        <h3>Book Your Trip Now!</h3>
+                        <div class="name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="Address">
+                            <label for="Address">Address:</label>
+                            <input type="text" id="Address" name="Address" required>
+                        </div>
+                        <div class="travellers_number" style="padding: 12px 0;">
+                            <label for="number" style="display: inline-block; padding-right: 30px;">Number of
+                                Travellers:</label>
+                            <select id="people" onchange="updatePrice()">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9+">9+</option>
+                            </select>
+                        </div>
+                        <div class="Price" style="padding: 12px 0;">
+                            <label for="price" style="display: inline-block; padding-right: 30px;">Price:</label>
+                            <h4 id="price" style="display: inline-block; cursor: default;">Rs. 1000</h4>
+                        </div>
+                        <input type="Submit" value="Book Now">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============= footer ========== -->
+
+    <div class="footer">
+        <div class="main_footer">
+            <div class="row main_footer_content master_container">
+                <div class="col-md-3">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Why Us</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="">Get in Touch</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Chat</a></li>
+                        <li><a href="">Review</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li class="address"><a href="">Kirtipur, Kathmandu Nepal</a></li>
+                        <li class="phone_number"><a href="">+977-97126754190</a><a href="">+977-9860005241</a></li>
+                        <li class="mail_address"><a href="">travellingbirds@gmail.com</a></li>
+                    </ul>
+                    <div class="social_media">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Our Facebook</h3>
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbirdstravelling&tabs&width=340&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+                        width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="col-12">
+                    <div class="accepting_card">
+                        <h3>We Accept :</h3>
+                        <div class="payment_cards">
+                            <img src="images/payment/american-express.avif" alt="">
+                            <img src="images/payment/dinners-club.avif" alt="">
+                            <img src="images/payment/discover.avif" alt="">
+                            <img src="images/payment/jcb.avif" alt="">
+                            <img src="images/payment/master-card.avif" alt="">
+                            <img src="images/payment/union-pay-logo.avif" alt="">
+                            <img src="images/payment/visa.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="recommended">
+                        <h4>Recommended On :</h4>
+                        <div class="recommended_img">
+                            <img src="images/recommended/lonely-planet.jpg" alt="">
+                            <!-- <img src="images/recommended/tibet-book.jpg" alt=""> -->
+                            <img src="images/recommended/TourRadar_Logo.png" alt="">
+                            <img src="images/recommended/tripadvisor.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay_footer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>We Accept :</h4>
+                        <div class="payment_cards">
+                            <img src="images/payment/american-express.avif" alt="">
+                            <img src="images/payment/dinners-club.avif" alt="">
+                            <img src="images/payment/discover.avif" alt="">
+                            <img src="images/payment/jcb.avif" alt="">
+                            <img src="images/payment/master-card.avif" alt="">
+                            <img src="images/payment/union-pay-logo.avif" alt="">
+                            <img src="images/payment/visa.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-5">
+                        <h4>Recommended On :</h4>
+                        <div class="recommended_img">
+                            <img src="images/recommended/lonely-planet.jpg" alt="">
+                            <!-- <img src="images/recommended/tibet-book.jpg" alt=""> -->
+                            <img src="images/recommended/TourRadar_Logo.png" alt="">
+                            <img src="images/recommended/tripadvisor.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last_footer master_container">
+            <p>©️ copyright 2023 <span>Travelling Birds</span></p>
+            <p>Powered by : <a href=""><span>Iceberg Technology</span></a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- cdn link for js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- slick slider -->
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- link to js file -->
+    <script src="script.js"></script>
+    <script src="package.js"></script>
+
+
+
+
+</body>
+
+</html>

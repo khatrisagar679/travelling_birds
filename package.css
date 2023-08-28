@@ -1,0 +1,150 @@
+.display_one .swiper {
+    height: 70vh;
+}
+
+.display_one .brand_name_mission {
+    bottom: 32%;
+}
+
+.display_one .brand_name_mission h2 {
+    color: #F9E0BB;
+}
+
+
+
+
+/* package section */
+
+.package_section h2 {
+    font-size: 34px;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+
+.package_section .overview p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.package_section .overview {
+    margin-bottom: 52px;
+}
+
+/* itinerary section */
+
+.itinerary_section {
+    margin-bottom: 52px;
+}
+
+.itinerary_section div div:nth-child(odd) {
+    font-size: 18px;
+    cursor: default;
+}
+
+.itinerary_section div div p:first-child {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.itinerary_section div div p:first-child:hover {
+    color: #884A39;
+}
+
+.itinerary_section div div p:last-child {
+    display: none;
+}
+
+/* included */
+
+.included {
+    margin-bottom: 52px;
+}
+
+.included i {
+    font-size: 22px;
+    padding-right: 8px;
+}
+
+.included p {
+    font-size: 18px;
+}
+
+/* excluded */
+
+.excluded p i {
+    font-size: 22px;
+    padding-right: 18px;
+}
+
+.excluded p {
+    font-size: 18px;
+}
+
+/* form section */
+
+.package_section form {
+    padding: 22px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: rgb(235, 234, 234);
+    box-shadow: 1px 1px 3px rgb(183, 183, 183);
+    position: sticky;
+    top: 66px;
+}
+
+.package_section form h3 {
+    font-size: 32px;
+    color: #884A39;
+    margin: 6px auto 28px;
+    font-weight: 600;
+}
+
+.package_section form>div {
+    padding-bottom: 10px;
+}
+
+.package_section form>div input,
+.package_section form .message textarea {
+    width: 100%;
+}
+
+.package_section form label {
+    padding-bottom: 4px;
+}
+
+.package_section form label,
+.package_section form>input {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    color: #272727db;
+}
+
+.package_section form .message textarea {
+    height: 130px;
+}
+
+.package_section form input,
+.package_section form textarea {
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.package_section form input:focus-visible,
+.package_section form textarea:focus-visible {
+    outline-color: #bababa;
+}
+
+.package_section form>input {
+    margin: 0 auto;
+    padding: 8px 13px;
+    box-shadow: 1px 1px 3px rgb(183, 183, 183);
+    background-color: #dcdcdc;
+}
+
+.package_section form>input:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.04);
+    background-color: inherit;
+}
